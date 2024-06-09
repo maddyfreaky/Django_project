@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Details</title>
+</head>
+<body>
+    <table bgcolor="black">
+        <thead>
+            <tr bgcolor="grey">
+                <th>User ID</th>
+                <th>User Name</th>
+                <th>User Email</th>
+                <th>User Role</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for us in userdata %}
+        {% if us.uid == id %}
+        <tr bgcolor="lightgrey" align="center">
+            <td>{{ us.uid }}</td>
+            <td>{{ us.uname }}</td>
+            <td>{{ us.uemail }}</td>
+            <td>{{ us.urole}}</td>
+            
+        </tr>
+        {% endif %}
+        {% endfor %}
+        </tbody>
+
+
+    </table>
+    
+</body>
+</html>

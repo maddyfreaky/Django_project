@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<center>
+    <h1>Please enter the details!</h1>
+    <form name="register" method="post" action="../insertuser/">
+        {% csrf_token %}
+        <pre>
+            UID   : <input type="text" name="tuid" value="" width="200"><br>
+            NAME  : <input type="text" name="tuname" value="" width="200"><br>
+            EMAIL : <input type="text" name="tuemail" value="" width="200"><br>
+            ROLE  : <input type="text" name="turole" value="" width="200"><br>
+            <input type="submit" name="reg" value="Click here to submit" width="300" height="100">
+
+
+        </pre>
+
+
+    </form>
+</center>
+    
+</body>
+</html>
